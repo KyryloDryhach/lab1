@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перестановки</title>
+    <style>
+        img {
+            max-width: 90%;
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Завдання 1</h1>
+    <p>Загальна кількість перестановок з <i>n</i> елементів дорівнює <span class="highlight">добутку всіх цілих чисел</span> від <i>1</i> до <i>n</i>:</p>
+    <p class="formula">P<sub>n</sub> = 1 &bull; 2 &bull; 3 &bull; ... &bull; (n-2) &bull; (n-1) &bull; n.</p>
+
+    <h2>Завдання 2</h2> 
+    <dl>
+        <dt>АК</dt>
+        <dd>Архітектура комп'ютерів</dd>
+        <dt>МодС</dt>
+        <dd>Моделювання систем</dd>
+        <dt>СПЗ</dt>
+        <dd>Системи програмного забезпечення</dd>
+        <dt>КСх</dt>
+        <dd>Комп'ютерні схеми</dd>
+        <dt>ФПР</dt>
+        <dd>Функціональне програмування</dd>
+        <dt>C#</dt>
+        <dd>Програмування на мові C#</dd>
+    </dl>
+    
+    <h3>Завдання 3</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Символ</th>
+                <th>Назва</th>
+                <th>Атомна маса</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>H</td>
+                <td>Водень</td>
+                <td>1.008</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>He</td>
+                <td>Гелій</td>
+                <td>4.0026</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Li</td>
+                <td>Літій</td>
+                <td>6.94</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Be</td>
+                <td>Берилій</td>
+                <td>9.0122</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>B</td>
+                <td>Бор</td>
+                <td>10.81</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Завдання 4</h4>
+        <form action="#" method="post">
+            <label for="name">Назва комплектуючого:</label>
+            <input type="text" id="name" name="name" placeholder="Наприклад, Відеокарта" required>
+    
+            <label for="manufacturer">Виробник:</label>
+            <input type="text" id="manufacturer" name="manufacturer" placeholder="Наприклад, NVIDIA" required>
+    
+            <label for="type">Тип комплектуючого:</label>
+            <select id="type" name="type" required>
+                <option value="cpu">Процесор (CPU)</option>
+                <option value="gpu">Відеокарта (GPU)</option>
+                <option value="ram">Оперативна пам'ять (RAM)</option>
+                <option value="storage">Накопичувач (SSD/HDD)</option>
+                <option value="motherboard">Материнська плата</option>
+                <option value="psu">Блок живлення (PSU)</option>
+                <option value="case">Корпус</option>
+            </select>
+    
+            <label for="price">Ціна (у гривнях):</label>
+            <input type="number" id="price" name="price" min="0" step="1" placeholder="Наприклад, 15000" required>
+    
+            <label for="description">Опис:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Додаткова інформація про комплектуюче"></textarea>
+    
+            <button type="submit">Зберегти</button>
+        </form>
+
+        <h5>Завдання 5</h5>
+        <p>Клікніть по потрібній області, щоб перейти на відповідний ресурс:</p>
+    <!-- Зображення з прикріпленою картою -->
+    <img src="2024-12-08 01.01.42.jpg" alt="Мапа університету" usemap="#map-links">
+
+    <!-- Карта з визначенням областей -->
+    <map name="map-links">
+        <!-- Область для переходу на сайт університету -->
+        <area shape="rect" coords="100,100,400,300" href="https://nure.ua" alt="Сайт університету" title="Сайт університету">
+        
+        <!-- Область для переходу на сайт кафедри -->
+        <area shape="circle" coords="700,200,100" href="https://nure.ua/faculty" alt="Сайт кафедри" title="Сайт кафедри">
+        
+        <!-- Область для переходу до розкладу -->
+        <area shape="poly" coords="600,600,800,650,750,850,550,800" href="https://cist.nure.ua/ias/app/tt/f?p=778:2:2012036003149188" alt="Розклад" title="Розклад">
+    </map>
+
+    <p style="font-size: 14px; color: #555;">Наведені області: прямокутник, коло та полігон.</p>
+</body>
+</html>
